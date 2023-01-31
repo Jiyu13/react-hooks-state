@@ -26,9 +26,12 @@ function Counter() {
     // React will pass in the current value of count before updating it.
     // call setCount twice, the number will change by adding 2 each time
     setCount((currentCount) => currentCount + 1);
-    setCount((currentCount) => currentCount + 1);
+    // setCount((currentCount) => currentCount + 1);
   
   }
+
+  console.log("In component: ", count)
+
 
   // 5. use count variable to display its current value in button element
   // when button is clicked, it runs increment fn that calls the setCount fn to:
