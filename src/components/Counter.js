@@ -23,6 +23,8 @@ function Counter() {
     // // console.log(`after setState: ${count}`); // button hasn't been clicked yet?
 
     // 8. pass a callback fn, currentCount is the previous state
+    // React will pass in the current value of count before updating it.
+    // call setCount twice, the number will change by adding 2 each time
     setCount((currentCount) => currentCount + 1);
     setCount((currentCount) => currentCount + 1);
   
